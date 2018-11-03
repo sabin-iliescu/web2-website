@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -50,7 +50,7 @@
             </form>
         </div>
     </nav>
-    <!-- navbar ends here -->
+    <!-- navnar ends here -->
     <div class="container">
         <div class="jumbotron">
             <h1 class="display-4">Hello, world!</h1>
@@ -61,8 +61,8 @@
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
         <div class="row">
-            <div class="col-xs-12 col-lg-4">
-                <!-- sidemenu  -->
+            <div class="col-mx-12 col-lg-4">
+                <!-- sidemenu -->
                 <div class="list-group">
                     <button type="button" class="list-group-item list-group-item-action active">
                         Cras justo odio
@@ -83,45 +83,91 @@
                 <!-- sidemenu ends here -->
             </div>
             <div class="col-xs-12 col-lg-8">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+
+
+                        <h1 class="display-4">Contacteaza-ne</h1>
+                        <p class="lead">Te rugam sa ne contactezi pentru orice problema completand formularul de mai jos:</p>
+
+                        <form>
+                            <div class="form-group">
+                                <label for="inputNume">Nume / prenume</label>
+                                <input type="text" class="form-control" id="inputNume" placeholder="exp: Popescu Ionel">
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional
-                                    content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="form-group">
+                                    <label >Data nasterii</label>
+                                    <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control">
                             </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="exp: email@domeniu.ext">
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label for="inputPhone4">Telefon</label>
+                                <input type="number" class="form-control" id="inputPhone4" placeholder="exp: 07XXXXXXXX">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Adresa</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="exp: str. A.I.Cuza nr. 4">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                <label for="inputCity">Localitate</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="exp: Craiova">
+                                </div>
+                                <div class="form-group col-md-4">
+                                <label for="inputState">Judet</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Selecteaza...</option>
+                                    <option>Alba</option>
+                                    <option>Brasov</option>
+                                    <option>Dolj</option>
+                                </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                <label for="inputZip">Cod postal</label>
+                                <input type="text" class="form-control" id="inputZip" placeholder="exp:200120">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                    <label for="comment">Mesaj</label>
+                                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                <label class="form-check-label" for="gridCheck">
+                                    Sunt de acord cu GDPR
+                                </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Trimite mesaj</button>
+                            <div class="form-row">
+                                    <div class="col-md-12">
+                                        <p class="text-muted">
+                                            <strong>*</strong> Aceste campuri sunt obligatorii
+                                        </p>
+                                    </div>
+                                </div>
+                        </form>
+                    
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-sm-6">
-                    ceva aici
+              <div class="col-sm-6">
+                    ceva aici 
                 </div>
                 <div class="col-sm-6">
-                    alt ceva aici
+                    altceva aici
                 </div>
-            </div>
+              </div>
         </div>
     </div>
 </body>
-
 <footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
