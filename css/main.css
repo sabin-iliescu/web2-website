@@ -18,3 +18,7 @@
 .containter{
     margin-bottom:60px;
 }
+
+.row-centered-children {
+    justify-content: center;
+}
