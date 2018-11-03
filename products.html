@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="products.css">
+  <title>Bootstrap4 Project</title>
+</head>
+
+<body>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="nav-top">
+    <a class="navbar-brand" href="#"><i class="far fa-clock"></i> chrono</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav w-25 justify-content-around">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Pricing <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Top Navbar END -->
+
+  <!-- Header -->
+  <section class="products-header">
+    <div class="jumbotron text-center text-white">
+      <h1 class="display-3 mt-5">TIME</h1>
+      <p class="lead">15 BILLION YEARS AGO</p>
+      <hr class="my-4">
+      <p>Looking back seems like you were born to be late. Well...</p>
+      <a class="btn btn-maincolor btn-lg" href="#" role="button">not anymore</a>
+    </div>
+  </section>
+  <!-- Header END -->
+
+  <div class="container">
+    <div class="row">
+      <!-- Side menu LEFT -->
+      <div class="col-lg-4 order-2 order-lg-1">
+        <ul class="list-group h-100 pb-5 font-weight-bold">
+          <li class="list-group-item bg-link-men h-25">
+            <a class="text-white" href="#classic-men">MEN - Classic Watches &rarr;</a>
+          </li>
+          <li class="list-group-item bg-link-women h-25">
+            <a class="text-white" href="#classic-women">WOMEN - Classic Watches &rarr;</a>
+          </li>
+          <li class="list-group-item bg-link-smart h-25">
+            <a class="text-white" href="#smartwatches">Smartwatches &rarr;</a>
+          </li>
+          <li class="list-group-item bg-link-wall h-25">
+            <a class="text-white" href="#smartwatches">Wall Clocks &rarr;</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Side menu LEFT END-->
+
+      <!-- Promotions slider -->
+      <div class="d-none d-sm-block col-lg-8 order-1 order-lg-2">
+        <section class="pb-5">
+          <div id="promo-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#promo-slider" data-slide-to="0" class="active"></li>
+              <li data-target="#promo-slider" data-slide-to="1"></li>
+              <li data-target="#promo-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1530053364863-7afc6bcdca88?ixlib=rb-0.3.5&s=dd133a72b90e6353ba7a796efcf28048&auto=format&fit=crop&w=600&q=80"
+                  alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-3 discount mx-5"><span> -50% </span></h5>
+                  <p class="discount mx-5">for all our casual-sport watches</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1495704907664-81f74a7efd9b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e8c9e3d89d5ea4c4b786b1683ac5d92&auto=format&fit=crop&w=1050&q=80"
+                  alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-3 discount mx-5"><span> -30% </span></h5>
+                  <p class="discount mx-5">for all our ladies watches</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=717ae13fa0e515d1c7c9e92456439845&auto=format&fit=crop&w=1050&q=80"
+                  alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="display-3 discount mx-5"><span> -20% </span></h5>
+                  <p class="discount mx-5">for all our men watches</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Promotions slider END -->
+    </div>
+  </div>
+
+
+  <!-- MAIN container -->
+  <section class="container">
+
+    <!-- Products gallery -->
+    <div class="row px-3">
+      <article id="classic-men">
+        <h2 class="display-4 mb-4">Men <small class="text-muted">Classic</small></h2>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1495857000853-fe46c8aefc30?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4feb232d0618d2de473c11b1b9fb19aa&auto=format&fit=crop&w=1950&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">MVMT</h5>
+                <p class="card-text price-tag">$ 125.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1526045431048-f857369baa09?ixlib=rb-0.3.5&s=f26461245bdc7f69ba2f6ea2ba94be54&auto=format&fit=crop&w=1950&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">ROLEX</h5>
+                <p class="card-text price-tag">$ 325.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1532140588319-cfd0b67af829?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0d53ca49b58e5a0ed08074f8759e5f51&auto=format&fit=crop&w=1045&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">BEWELL</h5>
+                <p class="card-text price-tag">$ 225.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a09b4ef554ab44eaa686e0054e766ba0&auto=format&fit=crop&w=1059&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">OMEGA</h5>
+                <p class="card-text price-tag">$ 95.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1522115174737-2497162f69ec?ixlib=rb-0.3.5&s=69636a60ebcaa0738c2d8bf90daa2206&auto=format&fit=crop&w=1050&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">FOSSIL</h5>
+                <p class="card-text price-tag">$ 85.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1507428861205-e8aab693190e?ixlib=rb-0.3.5&s=5fd3efabc7f62fd5d9c63fd42fc593e8&auto=format&fit=crop&w=1060&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">CITIZEN</h5>
+                <p class="card-text price-tag">$ 67.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="classic-women">
+        <h2 class="display-4 mb-4">Women <small class="text-muted">Classic</small></h2>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1490915785914-0af2806c22b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=26025cd0d4ed2cb96c8b105b45c045cb&auto=format&fit=crop&w=1050&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">GOLD</h5>
+                <p class="card-text price-tag">$ 125.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1497382706140-605ee76b3b55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=596978d195a422e61e61308cb8b333b5&auto=format&fit=crop&w=1050&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Daniel Wellington</h5>
+                <p class="card-text price-tag">$ 325.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1451859757691-f318d641ab4d?ixlib=rb-0.3.5&s=300be9a026bef65f7276f40e1fa1ec1a&auto=format&fit=crop&w=1050&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Daniel Wellington</h5>
+                <p class="card-text price-tag">$ 225.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="smartwatches">
+        <h2 class="display-4 mb-4">Technofile <small class="text-muted">Smartwatch</small></h2>
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e3c63067ff0a7a46dd1a45d6781cd800&auto=format&fit=crop&w=989&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Android</h5>
+                <p class="card-text price-tag">$ 125.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1517420879524-86d64ac2f339?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ca1910047dae3b41bdaa4129d004343a&auto=format&fit=crop&w=926&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text price-tag">$ 325.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1526000217029-917ba26bf5b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a427099220a694818039e023c9878a1&auto=format&fit=crop&w=1050&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text price-tag">$ 225.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1461141346587-763ab02bced9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=834af0a507b957d58a19e99cfcb78c52&auto=format&fit=crop&w=1248&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text price-tag">$ 95.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1510017098667-27dfc7150acb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ee0754fb6d7ca4182b7b639f68cbaa9e&auto=format&fit=crop&w=1050&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><i class="fas fa-question"></i></h5>
+                <p class="card-text price-tag">$ 85.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1494858723852-d3cc2477e12c?ixlib=rb-0.3.5&s=7fcacc45706c5add7aa28b4ab3b7c74a&auto=format&fit=crop&w=1056&q=80"
+                alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text price-tag">$ 67.89</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info btn-sm float-none">Watch more</a>
+                <a href="#" class="btn btn-outline-success btn-sm float-right"><i class="fas fa-cart-plus"></i> BUY</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- Products gallery END -->
+
+  </section>
+  <!-- MAIN container END -->
+
+  <footer class="footer">
+    <nav class="nav justify-content-center">
+      <a class="nav-link active" href="#">About</a>
+      <a class="nav-link" href="#">FAQ</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
+  </footer>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript -->
+  <script src="products.js"></script>
+</body>
+
+</html>
