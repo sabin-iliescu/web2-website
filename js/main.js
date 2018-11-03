@@ -1,6 +1,6 @@
 $(document).ready(function () {
     var html = `<!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav-top">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,5 +51,19 @@ $(document).ready(function () {
     </nav>
     <!-- navbar ends here -->`;
     $('#navbar').append(html);
-
 });
+
+const toggleNavBackground = function () {
+    const nav = document.getElementById('nav-top');
+    if (window.scrollY > nav.scrollHeight) {
+        nav.classList.add('scrolling');
+    } else {
+        nav.classList.remove('scrolling');
+    }
+};
+
+function addToggle() {
+    document.addEventListener('scroll', toggleNavBackground);
+}
+
+document.addEventListener('DOMContentLoaded', addToggle);
