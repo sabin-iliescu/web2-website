@@ -50,11 +50,22 @@
                 <h1 class="display-4">Contacteaza-ne</h1>
                 <p class="lead">Te rugam sa ne contactezi pentru orice problema completand formularul de mai jos:</p>
 
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="form-group">
                         <label for="inputNume">Nume / prenume</label>
-                        <input type="text" class="form-control" id="inputNume" placeholder="exp: Popescu Ionel">
+                        <input type="text" class="form-control" id="inputNume" onkeyup="validateName()" placeholder="exp: Popescu Ionel"
+                            required>
+                        <div class="invalid-feedback">
+                            Introdu un nume intre 2 si 10 caractere.
+                        </div>
+                        <div class="eroare-peste-10 d-none">
+                            Introdu un nume mai mic de 10 caractere.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
+
                     <div class="form-group">
                         <label>Data nasterii</label>
                         <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control">
@@ -114,18 +125,6 @@
                     </div>
                 </form>
 
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <div class="col-lg-12">
-            <div class="row">
-                <div class="col-sm-6">
-                    ceva aici
-                </div>
-                <div class="col-sm-6">
-                    altceva aici
-                </div>
             </div>
         </div>
     </div>
