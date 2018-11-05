@@ -1,58 +1,33 @@
-$(document).ready(function () {
-    var html = `<!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="nav-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="carousel.html">carousel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="products.html">Products</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cake.html">Cakes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <!-- navbar ends here -->`;
-    $('#navbar').append(html);
-});
+// include .html files in markup via <div include-html="./file-path"></div>
+(function includeHTML() {
 
+    // loop through a collection of all HTML elements:
+    const htmlElementsCollection = document.getElementsByTagName("*");
+    for (let i = 0; i < htmlElementsCollection.length; i++) {
+        const element = htmlElementsCollection[i];
+
+        // search for elements with a certain atrribute to get its value as the .html file to be included:
+        const htmlFile = element.getAttribute("include-html");
+
+        if (htmlFile) {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) { // 4: request finished and response is ready
+                    if (this.status == 200) { element.innerHTML = this.responseText; }
+                    if (this.status == 404) { element.innerHTML = "Page not found."; }
+                    // remove the attribute, and call this function once more:
+                    element.removeAttribute("include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", htmlFile, true);
+            xhttp.send();
+            return;
+        }
+    }
+})();
+
+// animate navigation-bar's background on scroll event
 const toggleNavBackground = function () {
     const nav = document.getElementById('nav-top');
     if (window.scrollY > nav.scrollHeight) {
@@ -68,6 +43,7 @@ function addToggle() {
 
 document.addEventListener('DOMContentLoaded', addToggle);
 
+// Shopping cart functionality
 function addToCart() {
     var selectedQuantity = inputGroupSelect04.options[inputGroupSelect04.selectedIndex].value;
     window.console.log("selectedQuantity: ", selectedQuantity);
@@ -78,6 +54,8 @@ function addToCart() {
     }
 
 }
+
+//  Form validation methods
 function validateName() {
     var name = document.getElementById("inputNume").value;
     console.log(name);
@@ -92,6 +70,8 @@ function validateName() {
     }
 
 }
+
+// Bootstrap's validator function for .needs-validation class elements
 (function () {
     'use strict';
     window.addEventListener('load', function () {
