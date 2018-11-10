@@ -4,10 +4,9 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <title>Bootstrap</title>
-  <link rel="stylesheet" type="text/css" href="./Bootstrap_files/main.css">
   <link rel="stylesheet" href="./Bootstrap_files/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./Bootstrap_files/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/faq_css.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,11 +17,39 @@
             width: 100%;
             height: 200px;
         }
-        </style>
+  </style>
 </head>
 
 <body>
-  <div id="navbar"></div>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="file:///C:/Users/ZenStyle/Desktop/Week1/index.html#">Tort</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="file:///C:/Users/ZenStyle/Desktop/Week1/index.html#">Prajituri <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/ZenStyle/Desktop/Week1/index.html#">CandyBar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/ZenStyle/Desktop/Week1/Tema FAQ page/faq.html#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///C:/Users/ZenStyle/Desktop/Week1/Tema FAQ page/faq.html#">FAQ</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Cauta o prajitura..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- navbar ends here-->
   <img src="../images/cupcake-power2.jpg" alt="cupcake" class="responsive">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -49,7 +76,7 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Cauta o prajitura..." aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
@@ -65,9 +92,9 @@
         </h5>
       </div>
 
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div id="collapseOne" class="collapseShow" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
-          Pentru a putea transmite o comanda este necesar sa a creati un cont pe site-ul nostru. Va puteti inregistra
+          Pentru a putea transmite o comanda este necesar sa va creati un cont pe site-ul nostru. Va puteti inregistra
           simplu si direct
           apasand acest button.
         </div>
@@ -170,15 +197,13 @@
     </div>
   </div>
   <footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="./Bootstrap_files/jquery-3.3.1.slim.min.js.download" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="./Bootstrap_files/popper.min.js.download" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
       crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    <script src="./Bootstrap_files/bootstrap.min.js.download" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"></script>
-    <script src="../js/main.js"></script>
   </footer>
-
 
 </body>
 
