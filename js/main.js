@@ -27,21 +27,20 @@
     }
 })();
 
-// animate navigation-bar's background on scroll event
-const toggleNavBackground = function () {
-    const nav = document.getElementById('nav-top');
-    if (window.scrollY > nav.scrollHeight) {
-        nav.classList.add('scrolling');
-    } else {
-        nav.classList.remove('scrolling');
+// to-top arrow functionality
+(function showLinkToTop() {
+    function respondToScrollEvent() {
+        const arrowUp = document.querySelector('.totop');
+
+        if (window.scrollY > 500) {
+            arrowUp.style.opacity = '1';
+        } else {
+            arrowUp.style.opacity = '0';
+        }
     }
-};
 
-function addToggle() {
-    document.addEventListener('scroll', toggleNavBackground);
-}
-
-document.addEventListener('DOMContentLoaded', addToggle);
+    document.addEventListener('scroll', respondToScrollEvent);
+})();
 
 // Shopping cart functionality
 function addToCart() {
