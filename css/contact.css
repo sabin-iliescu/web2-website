@@ -1,0 +1,115 @@
+body {
+    background-color: #fff;
+}
+.address {
+    font-family:'Poppins', sans-serif;     
+    color:#212529;
+}
+.address h3{
+    font-size:24px;
+    font-weight: 600;
+    line-height: 28.8px;
+}
+
+.address h4, .media-body h4{
+    font-size:18px;
+    font-weight: 500;
+    line-height: 21.6px;
+}
+.address .a-text, .media-body p {
+    font-size:15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.media {
+    display: flex;
+    line-height:normal;
+    margin-bottom:30px;
+    text-align:left;
+    font-size:16px;
+}
+.media-body {
+    font-weight: 400;
+}
+
+.contact_form {
+    font-family:'Poppins', sans-serif;     
+    color:#212529;
+}
+
+.contact_form h2 {
+    font-size:36px;
+    padding-bottom:20px;
+}
+.contact_form p {
+    font-size:15px;
+    line-height:24px !important;
+    padding-bottom:20px;
+}
+
+.contact_form .input-field{
+    height: 50px;
+}
+
+.contact_form button {
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: .25rem;
+    border: 1px solid #ff2d55;
+    cursor: pointer;
+    color: #fff;
+    background: #ff2d55;
+    border: 1px solid #ff2d55;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+.contact_form button:hover {
+    background: #ff2d5300;
+    border: 1px solid rgba(36, 36, 36, 0.20);
+    color: #242424;
+}
+
+.form-control:focus{
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+
+.breadcrumbs {
+    font-family:'Poppins', sans-serif;    
+    color: #fff;
+    background-size: cover;
+    position: relative;
+    padding: 150px 0px 90px;
+    margin-bottom:100px;
+    background: rgba(0, 0, 0, 0.9);
+}
+.breadcrumbs h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size:36px;
+}
+.breadcrumbs ul, .breadcrumbs li {
+    display: inline-block;
+    margin-right:10px;
+    margin-left:0px !important;
+    padding-left:0;
+}
+.breadcrumbs a {
+    color: #fff;
+}
+
+.breadcrumbs .active, a:hover {
+    color: #ff2d55;
+    text-decoration:none;
+}
+
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}

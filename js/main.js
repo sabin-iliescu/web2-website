@@ -11,16 +11,16 @@
 
         if (htmlFile) {
             const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", htmlFile, true);
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4) { // 4: request finished and response is ready
                     if (this.status == 200) { element.innerHTML = this.responseText; }
                     if (this.status == 404) { element.innerHTML = "Page not found."; }
                     // remove the attribute, and call this function once more:
                     element.removeAttribute("include-html");
-                    includeHTML();
+                    //includeHTML();
                 }
             }
-            xhttp.open("GET", htmlFile, true);
             xhttp.send();
             return;
         }
