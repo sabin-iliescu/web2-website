@@ -11,6 +11,7 @@ a {
   text-decoration: none;
 }
 
+/* TOP NAVBAR */
 .store-location a {
   color: #ea1c2c;
 }
@@ -34,6 +35,7 @@ a {
   font-size: 1rem;
 }
 
+/* MAIN NAVBAR */
 .fa-search {
   transition: all .3s;
 }
@@ -43,12 +45,14 @@ a {
 
 .btn-red {
   background-color: #ea1c2c;
-  color: #fff !important;
+  color: #fff;
   border-radius: 100px;
+  padding: .5rem 2rem;
 }
 .btn-red:hover {
   background-color: #fff;
   border: 1px solid #999;
+  color: #242424;
 }
 
 .navbar-brand {
@@ -67,6 +71,7 @@ a {
   color: #ea1c2c;
 }
 
+/* MAIN PRESENTATION HEADER */
 .main-presentation {
   padding: 6rem 0;
   background-color: #fff;
@@ -90,6 +95,39 @@ a {
   margin-bottom: 2.5rem;
 }
 
+.presentation-video {
+  margin: 0;
+  position: relative;
+}
+
+.video__background {
+  height: 23rem;
+  width: 23rem;
+}
+
+.image__back {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.image__front {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background: url('https://images.unsplash.com/photo-1506459225024-1428097a7e18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3ab4e25a36018838f63e828e5a4d5570&auto=format&fit=crop&w=1868&q=80');
+  right: .2rem;
+  top: 1.8rem;
+  border-radius: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.presentation-links {
+  padding: 2rem 1rem;
+}
+
+/* ARROW: MOVE TO TOP OF THE PAGE */
 .totop {
   display: flex;
   position: fixed;
@@ -114,6 +152,43 @@ a {
   background: rgb(177, 55, 142);
 }
 
+/* WHAT WE DO */
+.what-we-do {
+  background: rgba(234, 28, 44, .6);
+  height: 24rem;
+}
+
+.what-we-do .container .row h2 {
+  line-height: 1;
+  color: #fff;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.what-we-do .container .row p.lead {
+  color: #fff;
+  font-weight: 300;
+}
+
+/* HOME GALLERY */
+.home-gallery__item {
+  padding: 1rem;
+}
+
+.home-gallery__image {
+  position: relative;
+  overflow: hidden;
+}
+
+.home-gallery__image img {
+  transition: all .3s ease-in-out;
+}
+
+.home-gallery .home-gallery__image:hover img {
+  transform: scale(1.1);
+}
+
+/* FOOTER TOP */
 .footer-top {
   font-family: 'Poppins', sans-serif;
   color: #fff;
@@ -209,6 +284,7 @@ a {
   cursor: pointer;
 }
 
+/* FOOTER */
 .footer-bottom {
   background: #f9d9df;
   font-family: 'Poppins', sans-serif;
