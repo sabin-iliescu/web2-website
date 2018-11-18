@@ -47,10 +47,6 @@ html, body {
     white-space: nowrap;
 }
 
-.img {
-    vertical-align: middle;
-    border-style: none;
-}
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
@@ -59,3 +55,68 @@ html, body {
     border: 1px solid transparent;
     border-radius: .25rem;
 }
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    max-width: 600px;
+    max-height: 400px;
+ }
+
+.overlay{
+    position: relative;
+    top: -400px;
+    height: 400px;
+    width: 600px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition:all 0.4s ease-in-out;
+ }
+
+.overlay .slink{
+    position: absolute;
+    bottom: -46px;
+    transition:all 0.4s ease-in-out;
+    
+ }
+.overlay .slink i{
+    color: white;
+    height: 45px;
+    width: 45px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 999;
+ }
+
+.overlay .slink i.fa-facebook{
+    background: #496daf;
+    
+}
+.overlay .slink i.fa-instagram {
+       background: #125688;
+        color: white;
+}
+.overlay .slink i.fa-pinterest-square{
+    background: #d32a1e;
+ }
+
+ .overlay .slink i.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.logo:hover .overlay{
+    opacity: 1;
+ }
+.logo:hover .slink{
+    bottom: 10px;
+ }
+
